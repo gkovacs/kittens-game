@@ -20,13 +20,13 @@ and give you a trillion of each resource.
 
 ## Usage
 
-Start off with a fresh game (may corrupt your existing one, so use a different browser profile if you care about your data).
+Start a fresh game (may corrupt your existing game data, so use a different browser/machine if you care about it).
 
-Press save (it's on the top-right corner)
+Press save (it's on the top-right corner).
 
-Open the javascript console (on chrome, you can open it with \`Control-Shift-J\` or \`Command-Shift-J\`, or by going to tools -> developer tools)
+Open the javascript console (on chrome, you can open it with \`Control-Shift-J\` or \`Command-Shift-J\`, or by going to menu -> more tools -> developer tools)
 
-Copy-paste the code below (you can see the source code [here](https://github.com/gkovacs/kittens_game_cheats/blob/master/kittens_game_cheats.js)) and then press enter.
+Copy-paste the code below and press enter (you can see the source code [here](https://github.com/gkovacs/kittens_game_cheats/blob/master/kittens_game_cheats.js))
 
 \`\`\`javascript
 ${minified_js}
