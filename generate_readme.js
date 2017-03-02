@@ -27,7 +27,7 @@ Press save (it's on the top-right corner)
 Then paste the following code into your chrome's URL bar and press enter (you can see the source code [here](https://github.com/gkovacs/kittens_game_cheats/blob/master/kittens_game_cheats.js))
 
 \`\`\`javascript
-javascript:${minified_js}
+javascript:(function(){${minified_js}})();
 \`\`\`
 
 The page will refresh, and you should have your one-trillion resources. Have fun!
