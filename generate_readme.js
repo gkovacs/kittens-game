@@ -24,15 +24,25 @@ Start off with a fresh game (may corrupt your existing one, so use a different b
 
 Press save (it's on the top-right corner)
 
-Then open the javascript console (on chrome, you can open it with \`Control-Shift-J\` or \`Command-Shift-J\`, or by going to tools -> developer tools)
+Then paste the following code into your chrome's URL bar and press enter (you can see the source code [here](https://github.com/gkovacs/kittens_game_cheats/blob/master/kittens_game_cheats.js))
 
-Copy-paste the code below (you can see the full source at https://github.com/gkovacs/kittens_game_cheats/blob/master/kittens_game_cheats.js )
+\`\`\`javascript
+javascript:${minified_js}
+\`\`\`
+
+The page will refresh, and you should have your one-trillion resources. Have fun!
+
+## Usage (alternative)
+
+If pasting the code into the URL bar did not work, try doing the following:
+
+Open the javascript console (on chrome, you can open it with \`Control-Shift-J\` or \`Command-Shift-J\`, or by going to tools -> developer tools)
+
+Copy-paste the code below (you can see the source code [here](https://github.com/gkovacs/kittens_game_cheats/blob/master/kittens_game_cheats.js)) and then press enter.
 
 \`\`\`javascript
 ${minified_js}
 \`\`\`
-
-Then refresh the page. You should have your one-trillion resources. Have fun!
 
 ## Credits
 

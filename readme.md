@@ -14,15 +14,25 @@ Start off with a fresh game (may corrupt your existing one, so use a different b
 
 Press save (it's on the top-right corner)
 
-Then open the javascript console (on chrome, you can open it with `Control-Shift-J` or `Command-Shift-J`, or by going to tools -> developer tools)
+Then paste the following code into your chrome's URL bar and press enter (you can see the source code [here](https://github.com/gkovacs/kittens_game_cheats/blob/master/kittens_game_cheats.js))
 
-Copy-paste the code below (you can see the full source at https://github.com/gkovacs/kittens_game_cheats/blob/master/kittens_game_cheats.js )
+```javascript
+javascript:function unlock_all_achievements(){var a=JSON.parse(localStorage['com.nuclearunicorn.kittengame.savedata']);for(var b of a.achievements)b.starUnlocked=!0,b.unlocked=!0;localStorage['com.nuclearunicorn.kittengame.savedata']=JSON.stringify(a)}function unlock_all_buildings(){var a=JSON.parse(localStorage['com.nuclearunicorn.kittengame.savedata']);for(var b of a.buildings)b.unlocked=!0;localStorage['com.nuclearunicorn.kittengame.savedata']=JSON.stringify(a)}function research_everything(){var a=JSON.parse(localStorage['com.nuclearunicorn.kittengame.savedata']);for(var b of a.science.techs)b.unlocked=!0,b.researched=!0;localStorage['com.nuclearunicorn.kittengame.savedata']=JSON.stringify(a)}function trillion_of_everything(){var a=JSON.parse(localStorage['com.nuclearunicorn.kittengame.savedata']);for(var b of a.resources)b.unlocked=!0,b.value+=1e12;localStorage['com.nuclearunicorn.kittengame.savedata']=JSON.stringify(a)}unlock_all_achievements(),unlock_all_buildings(),research_everything(),trillion_of_everything(),window.location.reload();
+```
+
+The page will refresh, and you should have your one-trillion resources. Have fun!
+
+## Usage (alternative)
+
+If pasting the code into the URL bar did not work, try doing the following:
+
+Open the javascript console (on chrome, you can open it with `Control-Shift-J` or `Command-Shift-J`, or by going to tools -> developer tools)
+
+Copy-paste the code below (you can see the source code [here](https://github.com/gkovacs/kittens_game_cheats/blob/master/kittens_game_cheats.js)) and then press enter.
 
 ```javascript
 function unlock_all_achievements(){var a=JSON.parse(localStorage['com.nuclearunicorn.kittengame.savedata']);for(var b of a.achievements)b.starUnlocked=!0,b.unlocked=!0;localStorage['com.nuclearunicorn.kittengame.savedata']=JSON.stringify(a)}function unlock_all_buildings(){var a=JSON.parse(localStorage['com.nuclearunicorn.kittengame.savedata']);for(var b of a.buildings)b.unlocked=!0;localStorage['com.nuclearunicorn.kittengame.savedata']=JSON.stringify(a)}function research_everything(){var a=JSON.parse(localStorage['com.nuclearunicorn.kittengame.savedata']);for(var b of a.science.techs)b.unlocked=!0,b.researched=!0;localStorage['com.nuclearunicorn.kittengame.savedata']=JSON.stringify(a)}function trillion_of_everything(){var a=JSON.parse(localStorage['com.nuclearunicorn.kittengame.savedata']);for(var b of a.resources)b.unlocked=!0,b.value+=1e12;localStorage['com.nuclearunicorn.kittengame.savedata']=JSON.stringify(a)}unlock_all_achievements(),unlock_all_buildings(),research_everything(),trillion_of_everything(),window.location.reload();
 ```
-
-The page should refersh on its own. You should have your one-trillion resources. Have fun!
 
 ## Credits
 
