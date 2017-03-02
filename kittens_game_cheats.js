@@ -49,3 +49,5 @@ unlock_all_achievements();
 unlock_all_buildings();
 research_everything();
 trillion_of_everything();
+
+window.location.reload();
